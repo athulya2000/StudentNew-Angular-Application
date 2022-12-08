@@ -14,4 +14,10 @@ export class ApiService {
   addCourse=(dataToSend:any)=>{
       return this.http.post("http://localhost:8080/add",dataToSend)  
   }
+  searchCouse=(data:any)=>{
+    return this.http.post("http://localhost:8080/search",data)
+  }
+  deleteCouse=(data:any)=>{
+    return this.http.post("http://localhost:8080/delete",data)
+  }
 }
